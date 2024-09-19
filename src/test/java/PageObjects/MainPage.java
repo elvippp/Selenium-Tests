@@ -9,11 +9,11 @@ import java.util.List;
 
 public class MainPage {
 
-    private WebDriver driver;
-    private By faqList = By.className("accordion__button");
-    private By orderButton = By.className("Button_Button__ra12g");
-    private By cookieButton = By.className("App_CookieButton__3cvqF");
-    private By orderButtonLower = By.className("Button_Button__ra12g Button_Middle__1CSJM");
+    private final WebDriver driver;
+    private final By faqList = By.className("accordion__button");
+    private final By orderButton = By.className("Button_Button__ra12g");
+    private final By cookieButton = By.className("App_CookieButton__3cvqF");
+    private final By orderButtonLower = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
 
     /**
      * Конструктор

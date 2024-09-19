@@ -6,14 +6,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class OrderPage {
-    private  WebDriver driver;
-    private By namePlaceholder = By.xpath("//input[@placeholder='* Имя']");
-    private By fullNamePlaceholder = By.xpath("//input[@placeholder='* Фамилия']");
-    private By addressPlaceholder = By.xpath("//input[@placeholder='* Адрес: куда привезти заказ']");
-    private By numderPlaceholder = By.xpath("//input[@placeholder='* Телефон: на него позвонит курьер']");
-    private By indergroundPlaceholder = By.xpath("//input[@placeholder='* Станция метро']");
-    private By undergroundList = By.className("select-search__select");
-    private By nextButton = By.xpath(".//button[text()='Далее']");
+    private final WebDriver driver;
+    private final By namePlaceholder = By.xpath("//input[@placeholder='* Имя']");
+    private final By fullNamePlaceholder = By.xpath("//input[@placeholder='* Фамилия']");
+    private final By addressPlaceholder = By.xpath("//input[@placeholder='* Адрес: куда привезти заказ']");
+    private final By numderPlaceholder = By.xpath("//input[@placeholder='* Телефон: на него позвонит курьер']");
+    private final By indergroundPlaceholder = By.xpath("//input[@placeholder='* Станция метро']");
+    private final By undergroundList = By.className("select-search__select");
+    private final By nextButton = By.xpath(".//button[text()='Далее']");
 
     /**
      * Конструктор

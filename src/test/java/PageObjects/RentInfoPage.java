@@ -6,13 +6,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RentInfoPage {
-    private WebDriver driver;
-    private By calendarPlaceholder = By.xpath("//input[@placeholder='* Когда привезти самокат']");
-    private By calendarObject = By.className("react-datepicker");
-    private By orderDurationPlaceholder =By.className("Dropdown-placeholder");
-    private By orderButton = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
-    private By confirmationWindow = By.className("Order_Modal__YZ-d3");
-    private By yesButton = By.xpath(".//button[text()='Да']");
+    private final WebDriver driver;
+    private final By calendarPlaceholder = By.xpath("//input[@placeholder='* Когда привезти самокат']");
+    private final By calendarObject = By.className("react-datepicker");
+    private final By orderDurationPlaceholder =By.className("Dropdown-placeholder");
+    private final By orderButton = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
+    private final By confirmationWindow = By.className("Order_Modal__YZ-d3");
+    private final By yesButton = By.xpath(".//button[text()='Да']");
 
     /**
      * Конструктор

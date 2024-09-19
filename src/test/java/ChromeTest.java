@@ -6,9 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -17,13 +15,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class ChromeTest {
     private WebDriver driver;
 
-    private String userName;
-    private String fullName;
-    private String address;
-    private String phoneNumber;
-    private String undergroundName;
-    private String orderDate;
-    private String orderDuration;
+    private final String userName;
+    private final String fullName;
+    private final String address;
+    private final String phoneNumber;
+    private final String undergroundName;
+    private final String orderDate;
+    private final String orderDuration;
 
     public ChromeTest(String userName, String fullName, String address, String phoneNumber,
                       String undergroundName, String orderDate, String orderDuration){
@@ -99,7 +97,6 @@ public class ChromeTest {
         var rentInfoPage = new RentInfoPage(driver);
         rentInfoPage.feelOrderForm(orderDate, orderDuration);
     }
-
 
 
     @After
