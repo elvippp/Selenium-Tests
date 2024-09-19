@@ -69,7 +69,6 @@ public class MainPage {
      */
     public void clickOrderButtonLower() {
         var orderBottomButton = driver.findElement(orderButtonLower);
-        System.out.println(orderBottomButton.getText());
         ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", orderBottomButton);
         orderBottomButton.click();
     }

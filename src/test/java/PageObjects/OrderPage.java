@@ -10,8 +10,8 @@ public class OrderPage {
     private final By namePlaceholder = By.xpath("//input[@placeholder='* Имя']");
     private final By fullNamePlaceholder = By.xpath("//input[@placeholder='* Фамилия']");
     private final By addressPlaceholder = By.xpath("//input[@placeholder='* Адрес: куда привезти заказ']");
-    private final By numderPlaceholder = By.xpath("//input[@placeholder='* Телефон: на него позвонит курьер']");
-    private final By indergroundPlaceholder = By.xpath("//input[@placeholder='* Станция метро']");
+    private final By phoneNumberPlaceholder = By.xpath("//input[@placeholder='* Телефон: на него позвонит курьер']");
+    private final By undergroundPlaceholder = By.xpath("//input[@placeholder='* Станция метро']");
     private final By undergroundList = By.className("select-search__select");
     private final By nextButton = By.xpath(".//button[text()='Далее']");
 
@@ -35,8 +35,8 @@ public class OrderPage {
         driver.findElement(namePlaceholder).sendKeys(userName);
         driver.findElement(fullNamePlaceholder).sendKeys(fullName);
         driver.findElement(addressPlaceholder).sendKeys(address);
-        driver.findElement(numderPlaceholder).sendKeys(phoneNumber);
-        driver.findElement(indergroundPlaceholder).click();
+        driver.findElement(phoneNumberPlaceholder).sendKeys(phoneNumber);
+        driver.findElement(undergroundPlaceholder).click();
         new WebDriverWait(driver, 3)
                 .until(ExpectedConditions.visibilityOfElementLocated(undergroundList));
 
